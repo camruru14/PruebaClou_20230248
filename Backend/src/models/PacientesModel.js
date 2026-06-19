@@ -41,4 +41,4 @@ const patientSchema =  new Schema({
     timestamps: true
 })
 
-export const patientModel = model("patients", patientSchema)
+export const patientModel = model("pacientes", patientSchema)

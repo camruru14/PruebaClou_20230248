@@ -1,6 +1,6 @@
 import { model, Schema } from "mongoose";
 
-const specialtySchema = new Schema({
+const especialidadSchema = new Schema({
     specialtyname:{
         type:String
     },
@@ -12,4 +12,4 @@ const specialtySchema = new Schema({
     }
 })
 
-export const specialtyModel = model("specialty", specialtySchema)
+export const specialtyModel = model("especialidad", especialidadSchema)

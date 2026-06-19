@@ -3,11 +3,11 @@ import mongoose, { model, Schema } from "mongoose";
 const medicalAppointmentSchema = new Schema({
     patient_id:{
         type: mongoose.Schema.Types.ObjectId,
-        ref: "patients"
+        ref: "pacientes"
     },
     specialty_id:{
         type: mongoose.Schema.Types.ObjectId,
-        ref: "specialty"
+        ref: "especialidad"
     },
     appointmentDate:{
         type: String
@@ -23,4 +23,4 @@ const medicalAppointmentSchema = new Schema({
     }
 }, {timestamps: true})
 
-export const medicalAppointmentsModel = model("medicalAppointments", medicalAppointmentSchema)
+export const medicalAppointmentsModel = model("CitasModel", CitasModelSchema)

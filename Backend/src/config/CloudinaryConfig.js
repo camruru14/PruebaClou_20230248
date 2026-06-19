@@ -3,15 +3,15 @@ import { CloudinaryStorage} from "multer-storage-cloudinary"
 import multer from "multer"
 
 v2.config({
-    cloud_name: "djtj1pex1",
-    api_key: "893775775762777",
-    api_secret: "WBDZ6YeNSS1hQXirVpi4qu1nudw",
+    cloud_name: "dpzt5igda",
+    api_key: "895788924226575",
+    api_secret: "IqkJCbJY1p-PyW4mgyxV1Vq3YOU",
 })
 
 const storage = new CloudinaryStorage({
     cloudinary: v2,
     params:{
-        folder: "hospitalRosales",
+        folder: "PruebaClou_20230248",
         allowed_format: ["jpg", "png", "jpg", "webp", "svg"]
     }
 })

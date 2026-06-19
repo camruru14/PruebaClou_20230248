@@ -1,12 +1,11 @@
 import e from "express";
 import citasMedicasRouter from "./src/routes/citasMedicasRoute.js";
 import equipoMedicoRouter from "./src/routes/equipoMedicoRoute.js";
-import especialidadesMedicasRouter from "./src/routes/especialidadesMedicasRoute.js";
-import expedienteClinicoRouter from "./src/routes/expedienteClinicoRoute.js";
+import especialidadesMedicasRouter from "./src/routes/especialidadesMedicaRoute.js";
 import loginPacientesRouter from "./src/routes/loginPacientesRoute.js";
 import pacientesRouter from "./src/routes/pacientesRoute.js";
-import recoveryPasswordRouter from "./src/routes/recoveryPasswordRoute.js";
-import registerPacientesRouter from "./src/routes/registerPacientesRoute.js";
+import recoveryPasswordRouter from "./src/routes/RecuperacionContraRoute.js";
+import registerPacientesRouter from "./src/routes/RegistroPacienteRoute.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 
@@ -20,7 +19,6 @@ app.use(cookieParser());
 
 app.use(e.json());
 
-//Endpoints
 app.use("/api/citasMedicas", citasMedicasRouter);
 app.use("/api/equipoMedico", equipoMedicoRouter);
 app.use("/api/especialidadesMedicas", especialidadesMedicasRouter);
